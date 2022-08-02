@@ -1,12 +1,16 @@
+import axios from "axios";
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   const [pokemonName, setPokemonName] = useState("");
 
+  const POKEMON_BASE_URL = "https://pokeapi.co/api/v2";
+
   const search = (): void => {
-    alert("Search button has been clicked!");
+    axios.get(POKEMON_BASE_URL + "/pokemon/" + pokemonName).then((res) => {
+      console.log(res.data);
+    });
   };
 
   return (
@@ -26,6 +30,8 @@ function App() {
       </div>
 
       <p>You have entered {pokemonName}</p>
+
+      <div id="pokemon-result">This will show the result</div>
     </div>
   );
 }
