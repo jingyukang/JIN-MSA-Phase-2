@@ -1,6 +1,8 @@
 import axios from "axios";
-import { Pokemon } from "pokenode-ts";
 import React, { useState } from "react";
+import { Pokemon } from "pokenode-ts";
+import { IconButton, TextField } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 import "./App.css";
 
 function App() {
@@ -14,9 +16,15 @@ function App() {
   const search = (): void => {
     pokemonName === ""
       ? alert("Please enter pokemon name")
-      : axios.get(POKEMON_BASE_URL + "/pokemon/" + pokemonName).then((res) => {
-          setPokemonInfo(res.data);
-        });
+      : axios
+          .get(POKEMON_BASE_URL + "/pokemon/" + pokemonName)
+          .then((res) => {
+            setPokemonInfo(res.data);
+          })
+          .catch((err) => {
+            console.log("Pokemon not found");
+            setPokemonInfo(undefined);
+          });
   };
 
   return (
@@ -24,15 +32,26 @@ function App() {
       <h1>Pokemon Search</h1>
 
       <div>
-        <label>Pokemon Name</label> <br />
-        <input
-          type="text"
-          id="pokemon-name"
-          name="pokemon-name"
-          onChange={(e) => setPokemonName(e.target.value)}
+        <TextField
+          id="search-bar"
+          className="text"
+          value={pokemonName}
+          onChange={(prop: any) => {
+            setPokemonName(prop.target.value);
+          }}
+          label="Enter a Pokémon Name..."
+          variant="outlined"
+          placeholder="Search..."
+          size="small"
         />
-        <br />
-        <button onClick={search}>Search</button>
+        <IconButton
+          aria-label="search"
+          onClick={() => {
+            search();
+          }}
+        >
+          <SearchIcon style={{ fill: "blue" }} />
+        </IconButton>
       </div>
 
       <p>You have entered {pokemonName}</p>
