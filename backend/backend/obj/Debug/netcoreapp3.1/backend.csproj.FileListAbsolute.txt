@@ -30,3 +30,5 @@ C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\NSwag.Gener
 C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\YamlDotNet.dll
 C:\Users\wlsrb\Desktop\MSA\2\backend\backend\obj\Debug\netcoreapp3.1\backend.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\wlsrb\Desktop\MSA\2\backend\backend\obj\Debug\netcoreapp3.1\backend.csproj.CopyComplete
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\backend.xml
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\obj\Debug\netcoreapp3.1\backend.xml
