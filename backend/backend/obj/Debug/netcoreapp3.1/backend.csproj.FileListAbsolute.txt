@@ -17,3 +17,16 @@ C:\Users\wlsrb\Desktop\MSA\2\backend\backend\obj\Debug\netcoreapp3.1\backend.Raz
 C:\Users\wlsrb\Desktop\MSA\2\backend\backend\obj\Debug\netcoreapp3.1\backend.dll
 C:\Users\wlsrb\Desktop\MSA\2\backend\backend\obj\Debug\netcoreapp3.1\backend.pdb
 C:\Users\wlsrb\Desktop\MSA\2\backend\backend\obj\Debug\netcoreapp3.1\backend.genruntimeconfig.cache
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\Namotion.Reflection.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\NJsonSchema.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\NJsonSchema.Yaml.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\NSwag.Annotations.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\NSwag.AspNetCore.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\NSwag.Core.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\NSwag.Core.Yaml.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\NSwag.Generation.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\NSwag.Generation.AspNetCore.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\bin\Debug\netcoreapp3.1\YamlDotNet.dll
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\obj\Debug\netcoreapp3.1\backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\wlsrb\Desktop\MSA\2\backend\backend\obj\Debug\netcoreapp3.1\backend.csproj.CopyComplete
