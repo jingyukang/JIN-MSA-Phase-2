@@ -36,6 +36,12 @@
             </summary>
             <returns>A 204 No Content Response</returns>
         </member>
+        <member name="M:backend.Controllers.RedditController.GetRawRedditHotPosts">
+            <summary>
+            Gets the raw JSON for the fot feed in reddit
+            </summary>
+            <returns>A JSON object representing the hot feed in reddit</returns>
+        </member>
         <member name="T:backend.Controllers.WeatherForecastController">
             <summary>
             This is the weather forecast controller that comes as a default from the project template when creating

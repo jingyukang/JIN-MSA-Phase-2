@@ -26,10 +26,15 @@ namespace backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddSwaggerDocument(options =>
             {
                 options.DocumentName = "My Amazing API";
                 options.Version = "V1";
+            });
+
+            services.AddHttpClient("reddit", configureClient: client => {
+                client.BaseAddress = new Uri("https://www.reddit.com/dev/api");
             });
         }
 
