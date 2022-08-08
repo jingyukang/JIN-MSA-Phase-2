@@ -33,8 +33,8 @@ namespace backend
                 options.Version = "V1";
             });
 
-            services.AddHttpClient("reddit", configureClient: client => {
-                client.BaseAddress = new Uri("https://www.reddit.com/dev/api");
+            services.AddHttpClient(Configuration["RedditClientName"], configureClient: client => {
+                client.BaseAddress = new Uri(Configuration["RedditAddress"]);
             });
         }
 
