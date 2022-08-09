@@ -1,3 +1,4 @@
+using backend.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,6 +37,8 @@ namespace backend
             services.AddHttpClient(Configuration["RedditClientName"], configureClient: client => {
                 client.BaseAddress = new Uri(Configuration["RedditAddress"]);
             });
+
+            services.AddTransient<IDemonstrationRepository, DemonstrationRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

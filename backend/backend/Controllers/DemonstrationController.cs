@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using backend.Repositories;
+using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace backend.Controllers
@@ -7,6 +8,13 @@ namespace backend.Controllers
     [Route("[controller]")]
     public class DemonstrationController : Controller
     {
+        private readonly IDemonstrationRepository _demonstrationRepository;
+
+        public DemonstrationController(IDemonstrationRepository demonstrationRepository)
+        {
+            _demonstrationRepository = demonstrationRepository;
+        }
+
         /// <summary>
         /// Adds two numbers together
         /// </summary>
@@ -22,7 +30,10 @@ namespace backend.Controllers
             if (left < 0 || right < 0) {
                 return BadRequest("The inputs must be greater than zero");
             }
-            return Ok(left+right);
+            else
+            {
+                return Ok(_demonstrationRepository.GetSum(left, right));
+            }    
         }
 
         /// <summary>
@@ -32,7 +43,7 @@ namespace backend.Controllers
         [HttpGet]
         [ProducesResponseType(200)]
         public IActionResult GetNumber() {
-            return Ok(new Random().NextDouble());
+            return Ok(_demonstrationRepository.GetRandom());
         }
 
         /// <summary>

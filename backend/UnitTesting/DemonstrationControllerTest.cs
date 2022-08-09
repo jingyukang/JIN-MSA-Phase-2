@@ -2,16 +2,20 @@ using NUnit.Framework;
 using backend.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using backend.Repositories;
 
 namespace UnitTesting
 {
     public class Tests
     {
         private DemonstrationController _demonstrationController;
+        private IDemonstrationRepository _demonstrationRepository;
+
         [SetUp]
         public void Setup()
         {
-            _demonstrationController = new DemonstrationController();
+            _demonstrationRepository = new DemonstrationRepository();
+            _demonstrationController = new DemonstrationController(_demonstrationRepository);
         }
 
         [Test]
