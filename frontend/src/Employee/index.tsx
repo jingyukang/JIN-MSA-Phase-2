@@ -12,14 +12,14 @@ const Employee = (): JSX.Element => {
 
   const EMPLOYEE_BASE_URL = "https://dummy.restapiexample.com/api/v1/employees";
 
-  const search = (): void => {
+  const search = async () => {
     employeeName === ""
       ? alert("Please enter Employee name")
-      : axios
+      : await axios
           .get(EMPLOYEE_BASE_URL)
           .then((res) => {
             employList = (res.data).data;
-            // console.log(employList);
+            console.log(employList);
             var employee = employList.find(item => item.employee_name == employeeName);
             setEmployeeInfo(employee);
           })
