@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.30" />
     <PackageReference Include="NSwag.AspNetCore" Version="13.16.1" />
   </ItemGroup>
 

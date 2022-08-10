@@ -25,7 +25,7 @@ namespace backend.Controllers
         [Route("add")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
-        public IActionResult GetSum(int left,int right)
+        public IActionResult GetSum(int left, int right)
         {
             if (left < 0 || right < 0) {
                 return BadRequest("The inputs must be greater than zero");
@@ -33,7 +33,7 @@ namespace backend.Controllers
             else
             {
                 return Ok(_demonstrationRepository.GetSum(left, right));
-            }    
+            }
         }
 
         /// <summary>
@@ -47,39 +47,74 @@ namespace backend.Controllers
         }
 
         /// <summary>
-        /// Demonstrates posting action
+        /// Demonstrates Posting action
         /// </summary>
+        /// <param name="name"></param>
+        /// <param name="discription"></param>
         /// <returns>A 201 Created response</returns>
         [HttpPost]
         [ProducesResponseType(201)]
-        public IActionResult DemonstratePost() {
-            Console.WriteLine("I'm doing some work right now to create a new thing...");
-
-            return Created(new Uri("https://www.google.com"),"Hi There(post)");
+        public IActionResult CreateData(string name, string discription)
+        {
+            if (name == null || discription == null)
+            {
+                return BadRequest("Name and description text areas must be filled");
+            }
+            return Ok(_demonstrationRepository.CreateData(name, discription));
         }
 
         /// <summary>
-        /// Demonstrates put action
+        /// Demonstrates Reading action
         /// </summary>
-        /// <returns>A 201 Created Response</returns>
-        [HttpPut]
-        [ProducesResponseType(201)]
-        public IActionResult DemonstratePut() {
-            Console.WriteLine("I'm over-writing whatever was where in the first place...");
+        /// <returns>Data</returns>
+        [HttpGet]
+        [Route("ReadData")]
+        [ProducesResponseType(200)]
+        public IActionResult ReadData()
+        {
+            return Ok(_demonstrationRepository.ReadData());
+        }
 
-            return Created(new Uri("https://www.google.com"), "Hi There(put)");
+        /// <summary>
+        /// Demonstrates Updating action
+        /// </summary>
+        /// <param name="id">Positive integer for ID</param>
+        /// <param name="newName">String for new Name</param>
+        /// <param name="newDescription">String for new Description</param>
+        /// <returns>A 201 Created data response (PUT)</returns>
+        [HttpPut]
+        [Route("UpdateData")]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+        public IActionResult UpdateData(int id, string newName, string newDescription)
+        {
+            
+            if (id <= 0)
+            {
+                return BadRequest("The ID must be greater than zero");
+            }
+            else if (newName == null || newDescription == null)
+            {
+                return BadRequest("New name and description text areas must be filled");
+            }
+            return Ok(_demonstrationRepository.UpdateData(id, newName, newDescription));
         }
 
         /// <summary>
         /// Demonstrates a delete action
         /// </summary>
+        /// <param name="id">Positive integer for ID to delete</param>
         /// <returns>A 204 No Content Response</returns>
         [HttpDelete]
         [ProducesResponseType(204)]
-        public IActionResult DemonstrateDelete() {
-            Console.WriteLine("I'm removing something from the database...");
-
-            return NoContent();
+        public IActionResult DeleteData(int id)
+        {
+            if (id <= 0)
+            {
+                return BadRequest("The ID must be greater than zero");
+            }
+            return Ok(_demonstrationRepository.DeleteData(id));
+            //return NoContent();
         }
     }
 }

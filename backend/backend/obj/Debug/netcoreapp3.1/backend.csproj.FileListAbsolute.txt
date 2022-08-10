@@ -67,3 +67,16 @@ C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\obj\Debug\netcoreap
 C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\obj\Debug\netcoreapp3.1\backend.pdb
 C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\obj\Debug\netcoreapp3.1\backend.genruntimeconfig.cache
 C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\appsettings.Production.json
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\Data\data.json
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\ZstdNet.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\wlsrb\Desktop\MSA\2\JIN-MSA-Phase-2\backend\backend\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll

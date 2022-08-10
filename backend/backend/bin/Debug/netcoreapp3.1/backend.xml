@@ -18,22 +18,34 @@
             </summary>
             <returns>A random number</returns>
         </member>
-        <member name="M:backend.Controllers.DemonstrationController.DemonstratePost">
+        <member name="M:backend.Controllers.DemonstrationController.CreateData(System.String,System.String)">
             <summary>
-            Demonstrates posting action
+            Demonstrates Posting action
             </summary>
+            <param name="name"></param>
+            <param name="discription"></param>
             <returns>A 201 Created response</returns>
         </member>
-        <member name="M:backend.Controllers.DemonstrationController.DemonstratePut">
+        <member name="M:backend.Controllers.DemonstrationController.ReadData">
             <summary>
-            Demonstrates put action
+            Demonstrates Reading action
             </summary>
-            <returns>A 201 Created Response</returns>
+            <returns>Data</returns>
         </member>
-        <member name="M:backend.Controllers.DemonstrationController.DemonstrateDelete">
+        <member name="M:backend.Controllers.DemonstrationController.UpdateData(System.Int32,System.String,System.String)">
+            <summary>
+            Demonstrates Updating action
+            </summary>
+            <param name="id">Positive integer for ID</param>
+            <param name="newName">String for new Name</param>
+            <param name="newDescription">String for new Description</param>
+            <returns>A 201 Created data response (PUT)</returns>
+        </member>
+        <member name="M:backend.Controllers.DemonstrationController.DeleteData(System.Int32)">
             <summary>
             Demonstrates a delete action
             </summary>
+            <param name="id">Positive integer for ID to delete</param>
             <returns>A 204 No Content Response</returns>
         </member>
         <member name="M:backend.Controllers.RedditController.GetRawReddit">

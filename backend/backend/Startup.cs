@@ -40,6 +40,7 @@ namespace backend
             });
 
             services.AddTransient<IDemonstrationRepository, DemonstrationRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
