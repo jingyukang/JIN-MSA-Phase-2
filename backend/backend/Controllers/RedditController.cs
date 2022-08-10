@@ -26,8 +26,8 @@ namespace backend.Controllers
         [HttpGet]
         [Route("raw")]
         [ProducesResponseType(200)]
-        public async Task<IActionResult> GetRawRedditHotPosts() {
-            var res = await _client.GetAsync("/hot");
+        public async Task<IActionResult> GetRawReddit() {
+            var res = await _client.GetAsync("");
             var content = await res.Content.ReadAsStringAsync();
             return Ok(content);
         }

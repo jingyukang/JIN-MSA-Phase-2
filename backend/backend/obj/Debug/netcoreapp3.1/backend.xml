@@ -36,7 +36,7 @@
             </summary>
             <returns>A 204 No Content Response</returns>
         </member>
-        <member name="M:backend.Controllers.RedditController.GetRawRedditHotPosts">
+        <member name="M:backend.Controllers.RedditController.GetRawReddit">
             <summary>
             Gets the raw JSON for the fot feed in reddit
             </summary>
